@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Press Start 2P';
+            font-size: 1rem;
+            line-height: 2;
+            height: 100%;
+            background-color: #221;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff090;
+        }
+
+        li {
+            color: #4FAF44;
+        }
+
+        .arrow i {
+            display: none;
+        }
+
+        .arrow {
+            position: relative;
+            display: block;
+            color: #F6EB14;
+        }
+
+        .arrow:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .arrow:hover i {
+            display: block;
+            position: absolute;
+            top: 0.50em;
+            left: -6em;
+        }
+
+        .vid {
+            margin-left: 50px;
+        }
+    </style>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The OG</title>
+</head>
+
+<body>
+    
+    <ol>
+        <p class="fas fa-arrow-alt-right arrow">Click On the List</p>
+        <li><a class="arrow" id="p5" onclick="toggleVideo('p5')"><i class="fas fa-arrow-alt-right"></i>Persona 5 Royal</a></li>
+        <li><a class="arrow" id="asftu" onclick="toggleVideo('astfu')"><i class="fas fa-arrow-alt-right"></i>A Space for the Unbound</a></li>
+        <li><a class="arrow" id="teraria" onclick="toggleVideo('teraria')"><i class="fas fa-arrow-alt-right"></i>Teraria</a></li>
+        <li><a class="arrow" id="omori" onclick="toggleVideo('omori')"><i class="fas fa-arrow-alt-right"></i>Omori</a></li>
+        <li><a class="arrow" id="wotw" onclick="toggleVideo('wowt')"><i class="fas fa-arrow-alt-right"></i>Will of the wisps</a></li>
+    </ol>
+
+    <div id="video-container" class="vid"></div>
+</body>
+
+</html>
